@@ -1,0 +1,39 @@
+@import '../../style.module.scss';
+
+.GridStyle {
+   padding: 20px;
+    width: 35vw;
+    min-width: max-content;
+    height: fit-content;
+    margin-top: 150px;
+    border: 4px double black
+}
+
+.ListStyle {
+    text-align: center;
+    font: bold 60px "Edit Undo BRK";
+    margin: 20px;
+    height: fit-content;
+    color: rgb(73, 72, 72);
+    transition: color 0.3s ease-out 0s;
+    vertical-align: middle;
+    &:hover {
+        cursor: pointer;
+        // border-bottom: 4px double rgb(92, 90, 90);
+        color: red;
+
+        div.testBar {
+            width: 250px;
+            border-bottom: 5px solid red;
+            // border-bottom-color: red;
+        }
+    }
+
+    div.testBar {
+        transition: width 0.3s ease-out 0s;
+        width: 40px;
+        height: 15px;
+        margin: auto;
+        border-bottom: 1px solid black;
+    }
+}

@@ -1,0 +1,33 @@
+@import '../../style.scss';
+.backGround {
+  // border: 5px solid rgb(255, 255, 255);
+  padding: 0 50rem 0 50rem;
+  // width: 100vw;
+  height: 55rem;
+  background: linear-gradient(rgba(75, 75, 75, 0.5), rgba(63, 63, 63, 0.5)) ,url("../../../public/image/maple.jpg") #6DB3F2;
+  background-size:     cover;                      /* <------ */
+  background-repeat:   no-repeat;
+  background-position: center center;              /* optional, center the image */
+  position: relative;
+  // border-radius: 2rem;
+}
+.backGroundIn{
+  padding-top: 10rem;
+  content: ' ';
+  color: #fff;
+  text-align: center;
+  font: 18px Arial, sans-serif;
+  background-color: rgba(46, 46, 46, 0.705);
+  position: absolute;
+  // width: 100%;
+  // height: 100%;
+  width: 60rem;
+  height: 45rem;
+  top: 5rem;
+  left: 5rem;
+  // transform: translate(-95%,0%);
+  border-radius: 5px;
+}
+.testCode{
+  background-color: red;
+}
