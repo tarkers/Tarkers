@@ -1,8 +1,9 @@
+import React from 'react';
 import { Action } from '../actions/index'
 import { ActionType } from '../actionTypes';
 const initState = 0;
 
-const reducer = (state = initState,action: Action ) => {
+const reducer = (state = initState,action: Action ):number => {
     switch (action.type) {
         case ActionType.TEST:
             return state + action.payload
