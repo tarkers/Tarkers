@@ -1,0 +1,28 @@
+@import '../../../style.scss';
+
+.selfieDivStyle {
+    width: 450px;
+    height: 450px;
+    background: no-repeat center/90% url("../../../../public/image/selfie.jpg");
+    border: 10px double black;
+}
+
+p {
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.decorateStyle {
+    background-color: red;
+    margin-top: 250px;
+    margin-right:10px;
+    width: 250px;
+    height: 50px;
+    // transform-origin: top left;
+    // transform: rotate(270deg);
+    h3{
+        color:white;
+        text-align: center;
+    }
+}

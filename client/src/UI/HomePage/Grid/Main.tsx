@@ -1,9 +1,7 @@
 import React from 'react'
-import { Grid } from 'rsuite'
 import style from '../home.module.scss'
 const Main:React.FC = () => {
     return (
-        <Grid className="m-0" fluid >
         <div className={style.backGround}>
             <div className={style.backGroundIn}>
                 <h1 >LIFE is a Game
@@ -21,7 +19,6 @@ const Main:React.FC = () => {
                 </p>
             </div>
         </div>
-    </Grid >
     )
 }
 
