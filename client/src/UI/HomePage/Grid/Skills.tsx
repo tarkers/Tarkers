@@ -6,13 +6,11 @@ import { jumpToPage } from '../../../reduxFile/feature/sideHeaderSlice'
 const Skills: React.FC = () => {
     const dispatch = useAppDispatch()
     return (
-        <Grid fluid className={style.pageDivTest}>
-            <div id="SKILLS" className={style.pageDivTest} onMouseEnter={() => { dispatch(jumpToPage("SKILLS")) }} >
-                <h1 className={style.pageTitle}>SKILLS</h1>
-                
-            </div>
+        <div id="SKILLS" className={style.pageDivTest} onMouseEnter={() => { dispatch(jumpToPage("SKILLS")) }} >
+            <h1 className={style.pageTitle}>SKILLS</h1>
 
-        </Grid>
+        </div>
+
     )
 }
 

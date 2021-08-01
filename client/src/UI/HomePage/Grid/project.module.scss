@@ -1,0 +1,13 @@
+@import '../../../style.scss';
+.projectGrid{
+    margin: 2px;
+    max-height: 300px;
+    max-width: 350px;
+    // border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    transition: transform ease-out 0.5s;
+    &:hover{
+        z-index: 1;
+        transform: scale(1.1);
+    }
+}
