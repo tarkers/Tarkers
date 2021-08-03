@@ -1,6 +1,6 @@
 import { InputAdornment, TextField } from '@material-ui/core'
 import React from 'react'
-import {  useAppDispatch } from '../../../reduxFile/hook'
+import { useAppDispatch } from '../../../reduxFile/hook'
 import { jumpToPage } from '../../../reduxFile/feature/sideHeaderSlice'
 import { Button, ButtonToolbar, Col, FlexboxGrid, Icon, IconButton, Row, } from 'rsuite'
 import testman from '../../../../public/image/testman.png'
@@ -8,19 +8,25 @@ import style from './contact.module.scss'
 const Contact: React.FC = () => {
     const dispatch = useAppDispatch()
     return (
-        <div id="CONTACT" className={`${style.contactPageStyle}`}  onMouseEnter={()=>{dispatch(jumpToPage("CONTACT"))}}>
+        <div id="CONTACT" className={`${style.contactPageStyle}`} onMouseEnter={() => { dispatch(jumpToPage("CONTACT")) }}>
             {/* <h1 className={style.pageTitle}>Contact</h1> */}
+            <Col xsHidden md={5} >
+                    <div className="mt-5">
+                        {/* <img src={testman} alt="" style={{ width: "60%" }} /> */}
+                    </div>
+
+                </Col>
             <Row style={{ height: "480px" }}>
-                <Col xs={24} md={10}>
+                <Col xs={24} md={5} className="mb-5">
                     <div className={style.contactDivStyle}>
-                        <h2 style={{whiteSpace:"pre-wrap"}}>Contact      Me</h2>
+                        <h2 style={{ whiteSpace: "pre-wrap" }}>Contact      Me</h2>
                         <div className="mt-3">
                             <Row className={`m-2`}>
-                                <Icon icon='map-marker' size="2x" style={{ color: "red" }} />
+                                <Icon icon='map' size="2x" style={{ color: "black" }} />
                                 <label className={style.contactLabelStyle}>Tainan,Taiwan</label>
                             </Row>
                             <Row className={`m-2`}>
-                                <Icon icon='envelope-square' size="2x" style={{ color: "black" }} />
+                                <Icon icon='send' size="2x" style={{ color: "black" }} />
                                 <label className={style.contactLabelStyle}>Yaksa1117@gmail.com</label>
                             </Row>
                             <Row className={`m-2`}>
@@ -37,15 +43,7 @@ const Contact: React.FC = () => {
                                 <a href="https://twitter.com/Tarkers2?s=09" target="_blank"><IconButton icon={<Icon icon="wechat" />} color="green" circle ></IconButton></a>
                             </ButtonToolbar>
                         </FlexboxGrid>
-
                     </div>
-                </Col>
-
-                <Col xsHidden md={4} >
-                    <div className="mt-5">
-                        <img src={testman} alt="" style={{ width: "60%" }} />
-                    </div>
-
                 </Col>
                 <Col xs={24} md={10}>
                     <div className={style.mailDivStyle}>
@@ -73,6 +71,12 @@ const Contact: React.FC = () => {
                         </div>
 
                     </div>
+                </Col>
+                <Col xsHidden md={4} >
+                    <div className="mt-5">
+                        {/* <img src={testman} alt="" style={{ width: "60%" }} /> */}
+                    </div>
+
                 </Col>
             </Row>
 

@@ -6,7 +6,7 @@ import SideHeader from './SideHeader/sideHeader'
 const Home: React.FC = () => {
     return (
         <Container >  
-             <SideHeader/>       
+             {/* <SideHeader/>        */}
             {/* <Main /> */}
             <Profile />
             <Skills />

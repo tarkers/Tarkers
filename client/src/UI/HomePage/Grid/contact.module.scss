@@ -7,10 +7,12 @@
     margin-left: auto;
     margin-right: auto;
     height: max-content;
-    max-width: 1400px;
+    margin: 30px;
+    width: 95vw;
+    // height: 80vh;
     align-items: center;
     /* x偏移量 | y偏移量 | 阴影模糊半径 | 阴影扩散半径 | 阴影颜色 */
-    box-shadow: 15px 25px 2rem rgb(187, 187, 187);
+    // box-shadow: 15px 25px 2rem rgb(187, 187, 187);
     box-shadow: 0px -100px inset rgba(255, 139, 7, 0.589);
     position: relative;
 }
@@ -29,7 +31,7 @@
 .mailDivStyle {
     // box-shadow: 5px 5px 0 5px rgb(246, 211, 164) ;
     margin: auto;
-    margin-top: -100px;
+    // margin-top: -100px;
     width: calc(30em);
     padding: 20px;
     height: 500px;
@@ -43,6 +45,7 @@
     font-size: 20px;
     margin: 10px;
 }
-h2{
+
+h2 {
     font-family: "Monoton" !important;
 }

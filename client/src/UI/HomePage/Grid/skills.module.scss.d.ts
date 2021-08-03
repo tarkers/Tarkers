@@ -2,10 +2,11 @@
 // Please do not change this file!
 interface CssExports {
   'centerDiv': string;
-  'loadMoreButton': string;
+  'circleLabel': string;
+  'circleProgress': string;
+  'developmentCol': string;
   'pageDivTest': string;
   'pageTitle': string;
-  'projectGrid': string;
 }
 export const cssExports: CssExports;
 export default cssExports;

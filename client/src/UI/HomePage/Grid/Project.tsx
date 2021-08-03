@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, FlexboxGrid, Grid, Panel, Row, Tag, TagGroup } from 'rsuite'
+import { Button, Col, FlexboxGrid, Grid, Panel, Row, Tag, TagGroup } from 'rsuite'
 import style from './project.module.scss'
 import './style.scss'
 import { useAppDispatch } from '../../../reduxFile/hook'
@@ -49,7 +49,7 @@ const Project: React.FC = () => {
                             製作一款空氣pm2.5偵測器
                         </p>
                     </Panel>
-                </FlexboxGrid.Item>     
+                </FlexboxGrid.Item>
             </FlexboxGrid>
             <FlexboxGrid justify="center">
                 <FlexboxGrid.Item className={style.projectGrid} colspan={24} md={6} >
@@ -84,8 +84,9 @@ const Project: React.FC = () => {
                         </p>
                     </Panel>
                 </FlexboxGrid.Item>
-
-                
+            </FlexboxGrid>
+            <FlexboxGrid justify="center">
+            <Button className={style.loadMoreButton} >Load More</Button>
             </FlexboxGrid>
         </div>
     )

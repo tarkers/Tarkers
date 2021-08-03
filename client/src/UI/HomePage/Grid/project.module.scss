@@ -2,12 +2,27 @@
 .projectGrid{
     margin: 2px;
     max-height: 300px;
-    max-width: 350px;
+    max-width: 400px;
     // border: 1px solid black;
     background-color: rgb(255, 255, 255);
     transition: transform ease-out 0.5s;
     &:hover{
         z-index: 1;
         transform: scale(1.1);
+    }
+}
+.loadMoreButton{
+    margin-top: 30px;
+    max-height: 300px;
+    width: 200px;
+    height: 80px;
+    font: bold "Roboto";
+    border-radius: 30px !important;
+    border: 3px solid black !important;
+    background-color: rgb(245, 170, 8) !important;
+    font-size: 25px !important;
+    color: white !important;
+    &:hover{
+        background-color:rgb(245, 63, 8) !important;
     }
 }

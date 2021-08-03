@@ -3,8 +3,22 @@
 .selfieDivStyle {
     width: 450px;
     height: 450px;
-    background: no-repeat center/90% url("../../../../public/image/selfie.jpg");
-    border: 10px double black;
+    background:white no-repeat center/90% url("../../../../public/image/selfie.jpg");
+    border: 5px solid rgb(255, 169, 32);
+    border-radius: 25px;
+    position: relative;
+    &::before{
+        border-radius: 25px;
+        content: ' ';
+        z-index: -1;
+        position: absolute;
+        width: 450px;
+        height: 450px;
+        left: 10px;
+        top:10px;
+        background-color: rgb(255, 115, 0);
+        border: 5px solid rgb(255, 169, 32);
+    }
 }
 
 p {
