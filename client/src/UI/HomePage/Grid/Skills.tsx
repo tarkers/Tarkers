@@ -1,5 +1,5 @@
 import React from 'react'
-import { Progress, Col, Row, Divider } from 'rsuite'
+import { Progress, Col, Row, Divider, Grid } from 'rsuite'
 import style from './skills.module.scss'
 import { useAppDispatch } from '../../../reduxFile/hook'
 import { jumpToPage } from '../../../reduxFile/feature/sideHeaderSlice'
@@ -92,7 +92,7 @@ const Skills: React.FC = () => {
             Item.push(
                 key % 2 == 0 ? <Row key={key}>
                     <Col xs={10}>
-                        <div className={style.circleProgress}>
+                        <div className={style.circleProgress} >
                             <Circle trailWidth={1} percent={item.percentage} strokeColor={item.color} />
                         </div>
                     </Col>
@@ -105,7 +105,7 @@ const Skills: React.FC = () => {
                             <h1 style={{ marginTop: "20%", textAlign: "center" }}>{item.title}</h1>
                         </Col>
                         <Col xs={10}>
-                            <div className={style.circleProgress}>
+                            <div className={style.circleProgress} style={{float:"right"}}>
                                 <Circle trailWidth={1} percent={item.percentage} strokeColor={item.color} />
                             </div>
                         </Col>
@@ -164,23 +164,22 @@ const Skills: React.FC = () => {
         return Items
     }
     return (
-        <div id="SKILLS" onMouseEnter={() => { dispatch(jumpToPage("SKILLS")) }} >
+
+        <Row >
             <h1 className={style.pageTitle}>SKILLS</h1>
-            <Row style={{ backgroundColor: "#3a3a3a" }}>
+            <Row style={{ backgroundColor: "#3a3a3a" }} id="SKILLS" onMouseEnter={() => { dispatch(jumpToPage("SKILLS")) }} >
+
                 <Col sm={24} md={10} className={style.developmentCol}>
-                    {/* <div style={{ marginTop: "10px" }}>
+                    <div style={{ marginTop: "10px" }}>
                         {developForeach()}
-                    </div> */}
+                    </div>
                 </Col>
-                <Col sm={24} md={14} style={{ backgroundColor: "#ffffff",padding:"20px"}}>
+                <Col sm={24} md={14} style={{ backgroundColor: "#ffffff", padding: "50px" }}>
                     {detailForeach()}
                 </Col>
             </Row>
-            <div>
+        </Row>
 
-
-            </div>
-        </div>
 
     )
 }

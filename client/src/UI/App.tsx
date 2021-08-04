@@ -18,7 +18,6 @@ const App: React.FC = () => {
   return (
     <Router history={history}>
       <Container>
-        <Container>
           <Container>
             <Header />
           </Container>
@@ -32,8 +31,6 @@ const App: React.FC = () => {
             <Route exact path="/" component={HomePage} />
           </Switch>
           <Footer className={style.FooterStyle}>© 2021 Created - Designed by Tarkers</Footer>
-
-        </Container>
       </Container>
 
 

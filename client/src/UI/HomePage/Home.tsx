@@ -5,7 +5,7 @@ import './home.scss'
 import SideHeader from './SideHeader/sideHeader'
 const Home: React.FC = () => {
     return (
-        <Container >  
+        < Grid fluid>   
              {/* <SideHeader/>        */}
             {/* <Main /> */}
             <Profile />
@@ -14,7 +14,7 @@ const Home: React.FC = () => {
             <Project />
             <Article />
             <Contact />
-        </Container>
+        </Grid>
 
     )
 }
