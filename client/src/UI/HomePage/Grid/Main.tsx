@@ -1,18 +1,17 @@
 import React from 'react'
-import { Grid } from 'rsuite'
+import { Col, Row } from 'rsuite'
 import style from '../home.module.scss'
-const Main:React.FC = () => {
+const Main: React.FC = () => {
     return (
-        <Grid className="m-0" fluid >
-        <div className={style.backGround}>
-            <div className={style.backGroundIn}>
+        <Row className={style.backGround}>
+            <div className={`${style.centerDiv} ${style.backGroundDiv}`}>
                 <h1 >LIFE is a Game
                     <br />
                     Controller in Hand
                     <br />
                     Start Playing Like The Champion
                 </h1>
-                <br/>
+                <br />
                 <p>quote in my mind ,nobody can controll our lives
                     <br />
                     don't be afraid to fall down ,all these are the mark of glory
@@ -20,8 +19,13 @@ const Main:React.FC = () => {
                     Fight till the sun rise
                 </p>
             </div>
-        </div>
-    </Grid >
+            <Col sm={12}>
+
+            </Col>
+            <Col sm={12}>
+
+            </Col>
+        </Row>
     )
 }
 

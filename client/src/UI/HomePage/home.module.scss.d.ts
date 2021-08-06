@@ -2,11 +2,10 @@
 // Please do not change this file!
 interface CssExports {
   'backGround': string;
-  'backGroundIn': string;
+  'backGroundDiv': string;
   'centerDiv': string;
   'pageDivTest': string;
   'pageTitle': string;
-  'testCode': string;
 }
 export const cssExports: CssExports;
 export default cssExports;

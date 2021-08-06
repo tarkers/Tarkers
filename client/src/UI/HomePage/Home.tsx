@@ -4,7 +4,7 @@ import { Main, Profile, Skills, Experience, Project, Article, Contact } from './
 import './home.scss'
 const Home: React.FC = () => {
     return (
-        <Container >
+        <Grid >
             <Main />
             <Profile />
             <Skills />
@@ -12,7 +12,7 @@ const Home: React.FC = () => {
             <Project />
             <Article />
             <Contact />
-        </Container>
+        </Grid>
 
     )
 }

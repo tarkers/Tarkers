@@ -5,7 +5,6 @@ import { bindActionCreators } from 'redux'
 import { actionCreators, State } from '../reduxFile/index'
 import { HomePage,  ArticlePage, ChoiceNavPage, Header } from './index'
 import { Router, Route, Switch } from "react-router-dom";
-import './App.scss'
 import style from './App.module.scss'
 import 'rsuite/dist/styles/rsuite-default.css';
 import { createBrowserHistory } from 'history';
