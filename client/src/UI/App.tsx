@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux'
 import { Container, Content, Footer, Button, Grid } from 'rsuite'
-import { HomePage, ProjectPage, ArticlePage, ChoiceNavPage, Header } from './index'
+import { HomePage, ArticlePage, ChoiceNavPage, Header } from './index'
 import { Router, Route, Switch } from "react-router-dom";
 import './App.scss'
 import style from './App.module.scss'
@@ -26,7 +26,6 @@ const App: React.FC = () => {
           </div> */}
           <Switch>
             <Route exact path="/choicNav" component={ChoiceNavPage} />
-            <Route exact path="/project" component={ProjectPage} />
             <Route exact path="/dashboard" component={ArticlePage} />
             <Route exact path="/" component={HomePage} />
           </Switch>

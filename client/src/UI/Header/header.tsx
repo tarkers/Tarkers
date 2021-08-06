@@ -11,7 +11,6 @@ const header: React.FC = () => {
                 <div className={`p-1 w-100 bd-highlight`}><h2 style={{fontFamily:"Monoton"}}>Tarkers</h2></div>
                 <div className={`p-1 flex-shrink-1 bd-highlight my-auto ${styles.navStyle}`}><Link to="/">Home</Link></div>
                 <div className={`p-1 flex-shrink-1 bd-highlight my-auto ${styles.navStyle}`}><Link to="/Artical">Artical</Link></div>
-                <span className={`p-1 flex-shrink-1 bd-highlight my-auto ${styles.navStyle}`}> <Link to="/Project">Project</Link></span>
                 <div className="p-1 flex-shrink-1 bd-highlight"><Link to="/choicNav"> <IconButton size='lg' icon={<Icon icon="bars" />} /></Link></div>
             </div>
         </Header>

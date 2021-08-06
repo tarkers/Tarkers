@@ -22,10 +22,10 @@ module.exports = {
     // devServer: { contentBase: path.join(__dirname, "src") },
     module: {
         rules: [
-            {
-                test: /\.html$/,
-                loader: "raw-loader" // loaders: ['raw-loader']，這個方式也是可以被接受的。
-            },
+            // {
+            //     test: /\.html$/,
+            //     loader: "raw-loader" // loaders: ['raw-loader']，這個方式也是可以被接受的。
+            // },
             {
                 test: /\.(ts|tsx)$/,
                 enforce: 'pre',
@@ -40,14 +40,6 @@ module.exports = {
                 ],
                 exclude: /node_modules/,
             },
-            // {
-            //     test: /\.tsx?$/,
-            //     use: [{ loader: 'awesome-typescript-loader' }],
-            //     exclude: [/node_modules/, /build/],
-            //     // query: {
-            //     //     declaration: false,
-            //     // }
-            // },
             {
                 test: /\.tsx?$/,
                 loader: "ts-loader",

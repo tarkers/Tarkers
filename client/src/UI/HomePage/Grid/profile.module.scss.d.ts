@@ -3,8 +3,12 @@
 interface CssExports {
   'centerDiv': string;
   'decorateStyle': string;
+  'enNameTitle': string;
+  'nameTitle': string;
   'pageDivTest': string;
   'pageTitle': string;
+  'posTitle': string;
+  'profileRow': string;
   'selfieDivStyle': string;
 }
 export const cssExports: CssExports;

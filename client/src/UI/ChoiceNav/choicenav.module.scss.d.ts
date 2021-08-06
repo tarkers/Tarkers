@@ -3,9 +3,7 @@
 interface CssExports {
   'GridStyle': string;
   'ListStyle': string;
-  'centerDiv': string;
   'testBar': string;
-  'testColor': string;
 }
 export const cssExports: CssExports;
 export default cssExports;

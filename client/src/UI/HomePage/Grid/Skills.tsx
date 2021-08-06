@@ -6,12 +6,6 @@ import { jumpToPage } from '../../../reduxFile/feature/sideHeaderSlice'
 const Skills: React.FC = () => {
     const dispatch = useAppDispatch()
     const { Line, Circle } = Progress
-    interface LanguageInterface {
-        // [index: number]: {
-        title: string,
-        data: { title: string, color: string, percentage: number }[]
-        // }
-    }
     const skillData = [
         {
             title: "Frontend",
@@ -105,7 +99,7 @@ const Skills: React.FC = () => {
                             <h1 style={{ marginTop: "20%", textAlign: "center" }}>{item.title}</h1>
                         </Col>
                         <Col xs={10}>
-                            <div className={style.circleProgress} style={{float:"right"}}>
+                            <div className={style.circleProgress} style={{ float: "right" }}>
                                 <Circle trailWidth={1} percent={item.percentage} strokeColor={item.color} />
                             </div>
                         </Col>
@@ -119,9 +113,6 @@ const Skills: React.FC = () => {
         skillData.forEach((items, key) => {
             const Item: JSX.Element[] = []
             if (items.title == "Others") {
-                Item.push(<Divider><h3 style={{ textAlign: "center" }}>{items.title}</h3></Divider>)
-                // Item.push(<h3 style={{ textAlign: "center" }}>{items.title}</h3>)
-
                 items.usage.forEach((item, index) => {
                     Item.push(
                         <Col key={index} xs={12} md={6} style={{ display: "inline-block" }}>
@@ -130,7 +121,14 @@ const Skills: React.FC = () => {
                         </Col>
                     )
                 })
-            } else {
+                Items.push(
+                    <Row key={key} style={{ margin: "15px", marginTop: "0" }}>
+                        <Divider><h3 style={{ textAlign: "center" }}>{items.title}</h3></Divider>
+                        {Item}
+                    </Row>
+                )
+            }
+            else {
                 const mapToList = (items: { title: string, color: string, percentage: number }[]) => {
                     const Items = items.map((item, index) => (
                         <Col key={index} xs={12} sm={12} md={12} style={{ display: "inline-block" }}>
@@ -140,8 +138,8 @@ const Skills: React.FC = () => {
                     ))
                     return Items
                 }
-                Item.push(
-                    <>
+                Items.push(
+                    <Row key={key} style={{ margin: "15px", marginTop: "0" }}>
                         <Divider><h3 style={{ textAlign: "center" }}>{items.title}</h3></Divider>
                         <Col md={12}>
                             <Row> <h4 style={{ textAlign: "center" }}>Tool</h4></Row>
@@ -152,14 +150,9 @@ const Skills: React.FC = () => {
                             <Row> <h4 style={{ textAlign: "center" }}>Language</h4></Row>
                             <Row>  {mapToList(items.language)}</Row>
                         </Col>
-                    </>
+                    </Row>
                 )
             }
-            Items.push(
-                <Row key={key} style={{ margin: "15px", marginTop: "0" }}>
-                    {Item}
-                </Row>
-            )
         })
         return Items
     }

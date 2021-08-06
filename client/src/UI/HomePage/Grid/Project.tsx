@@ -6,16 +6,8 @@ import { useAppDispatch } from '../../../reduxFile/hook'
 import { jumpToPage } from '../../../reduxFile/feature/sideHeaderSlice'
 const Project: React.FC = () => {
     const dispatch = useAppDispatch()
-    const addTitle = (title: string, tag: string) => {
-        return (
-            <div>
-                <h4 style={{ display: "inline-block" }}>132456</h4>
-            </div>
-
-        )
-    }
     return (
-        <div id="PROJECT" className={style.pageDivTest} onMouseEnter={() => { dispatch(jumpToPage("PROJECT")) }} >
+        <div id="PROJECT"  onMouseEnter={() => { dispatch(jumpToPage("PROJECT")) }} >
             <h1 className={style.pageTitle}>Project</h1>
             <FlexboxGrid justify="center">
                 <FlexboxGrid.Item className={style.projectGrid} colspan={24} md={6} >
