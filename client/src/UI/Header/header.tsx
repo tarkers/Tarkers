@@ -3,6 +3,7 @@ import styles from './header.module.scss'
 import { Link } from "react-router-dom";
 // import { useWindowDimensions } from '../../Component/useWindowDimensions'
 import { Header, Icon, IconButton, } from 'rsuite'
+
 const header: React.FC = () => {
     // const { height, width } = useWindowDimensions();
     return (

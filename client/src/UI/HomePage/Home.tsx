@@ -15,6 +15,7 @@ const Home: React.FC = () => {
                 <Article />
                 <Contact />
             </Grid>
+
         </Grid>
 
     )

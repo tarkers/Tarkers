@@ -24,8 +24,6 @@ const App: React.FC = () => {
           </Switch>
           <Footer className={style.FooterStyle}>© 2021 Created - Designed by Tarkers</Footer>
       </Container>
-
-
     </Router>
   );
 }
