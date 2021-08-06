@@ -1,0 +1,23 @@
+@import '../../../style.scss';
+.circleProgress {
+    margin: 10px;
+    width: 62%;
+    // display: 'inline-block';
+    // float: left;
+  };
+.circleLabel{
+    position: absolute;
+    left: 25px;
+    top: calc(50% - 10px);
+    text-align: center;
+    font-size: 18px;
+}
+.developmentCol{
+  background-color: transparent;
+  color: white;
+  height: inherit;
+  display: inline-block;
+  h1,h2,h3,h4{
+    font-family: "Roboto";
+  }
+}

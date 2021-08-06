@@ -1,0 +1,30 @@
+.custom-timeline .rs-timeline-item-custom-dot {
+    position: absolute;
+    // background: #fff;
+    top: 0;
+    left: -2px;
+    // border: 6px double rgb(241, 132, 81);
+    width: 60px;
+    height: 60px;
+    border-radius: 30%;
+    font-size: 18px;
+    padding-top: 9px;
+    color: rgb(29, 29, 29);
+    margin-left: -25px;
+    background-color: rgb(255, 179, 0);
+    label{
+        padding-top:10px;
+        font-family: "Roboto";
+    }
+}
+
+.custom-timeline .rs-timeline-item-content {
+    // padding-bottom: 25px;
+    p{
+     font-family: "Roboto";
+     font-size: 20px;
+    }
+}
+.rs-panel-title{
+    width: 100%;
+}

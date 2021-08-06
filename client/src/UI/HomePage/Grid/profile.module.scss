@@ -1,0 +1,84 @@
+@import '../../../style.scss';
+
+.profileRow{
+    max-height: max-content;
+    min-height: 500px;
+    padding: 10px 0;
+}
+.selfieDivStyle {
+    width: auto;
+    min-width: 45px;
+    height: 450px;
+    background: white no-repeat center/90% url("../../../../public/image/maple.jpg");
+    display: block;
+    margin: auto;
+}
+
+
+
+.decorateStyle {
+    background-color: red;
+    margin-top: 250px;
+    margin-right: 10px;
+    width: 250px;
+    height: 50px;
+
+    // transform-origin: top left;
+    // transform: rotate(270deg);
+    h3 {
+        color: white;
+        text-align: center;
+    }
+}
+
+.nameTitle {
+    padding: 10px;
+    font-family: "Roboto";
+    text-align: start;
+    font-size: 86px;
+    position: relative;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    
+    &::before{
+        margin-right: 10px;
+        background-color: green;
+        padding: 5px 10px;
+        content: " ";
+    }
+}
+.enNameTitle {
+    margin-top: 25px;
+    padding: 10px;
+    font-family: "Roboto";
+    text-align: start;
+    font-size: 50px;
+    &::before{
+        margin-right: 10px;
+        background-color: red;
+        padding: 10px 10px;
+        content: " ";
+    }
+}
+.posTitle{
+    margin-top: 15px;
+    padding: 10px;
+    font-family: "Roboto";
+    text-align: start;
+    font-size: 50px;
+    &::before{
+        background-color: rgb(0, 183, 255);
+        padding: 5px 8px;
+        margin-right: 10px;
+        content: " ";
+    }
+}
+p{
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 18px;
+}
+h2{
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 40px;
+}

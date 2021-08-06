@@ -1,7 +1,8 @@
-.redStyle{
-    color: red;
-    font: bold 25px "Roboto" ,serif;
-}
+@import '../style.scss';
 .FooterStyle{
     text-align: center;
+    margin: 0;
+    font-size: 8px;
+    color: rgb(255, 255, 255);
+    background-color: $footer-color;
 }

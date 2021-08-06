@@ -1,0 +1,46 @@
+@import '../../../style.scss';
+
+.contactPageStyle {
+    padding: 30px;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    // background-color: rgba(250, 255, 180, 0.835);
+    // div{
+    //     margin-bottom: 20px;
+    // }
+}
+
+.contactDivStyle {
+    margin-top: 20px;
+    margin-left: 80px;
+    align-items: center;
+}
+
+.mailInputStyle {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.mailDivStyle {
+    // box-shadow: 5px 5px 0 5px rgb(246, 211, 164) ;
+    // margin: auto;
+    // margin-top: -100px;
+    width: 85%;
+    margin: auto;
+    // padding: 20px;
+    // height: 500px;
+    // border: 10px double $footer-color;
+}
+
+
+
+.contactLabelStyle {
+    font-size: 25px;
+    margin: 10px;
+    color: rgb(80, 66, 66);
+}
+
+h2 {
+    font-family: "Monoton" !important;
+}

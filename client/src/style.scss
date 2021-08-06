@@ -1,5 +1,5 @@
 $back-color:rgb(207, 207, 207);
-
+$footer-color:rgb(41, 45, 47);
 label {
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
@@ -20,6 +20,7 @@ div {
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
+  height: 10px;
 }
 
 /* Track */
@@ -42,11 +43,12 @@ div {
   margin: auto;
   font-family: "Monoton";
   color: black;
+  margin-bottom: 20px;
 }
 
 .pageDivTest {
   margin: 30px;
   width: 95vw;
   height: 80vh;
-  background-color: rgba(197, 248, 167, 0.219);
+  // background-color: rgba(197, 248, 167, 0.219);
 }

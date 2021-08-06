@@ -1,0 +1,11 @@
+@import '../../../style.scss';
+
+.articleDiv {
+    width: auto;
+    height: 300px;
+    background: no-repeat  url("../../../../public/image/maple.jpg");
+    background-size: auto 100%;
+    &:hover{
+        filter: brightness(0.8);
+    }
+}
