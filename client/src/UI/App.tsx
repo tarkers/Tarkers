@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { Container, Content, Footer, Button, Grid } from 'rsuite'
 import { bindActionCreators } from 'redux'
 import { actionCreators, State } from '../reduxFile/index'
-import { HomePage, ProjectPage, ArticlePage, ChoiceNavPage, Header } from './index'
+import { HomePage,  ArticlePage, ChoiceNavPage, Header } from './index'
 import { Router, Route, Switch } from "react-router-dom";
 import './App.scss'
 import style from './App.module.scss'
@@ -37,7 +37,6 @@ const App: React.FC = () => {
             width: {width} ~ height: {height}
           </div> */}
             <Route exact path="/" component={HomePage} />
-            <Route path="/project" component={ProjectPage} />
             <Route path="/dashboard" component={ArticlePage} />
             <Route path="/choicNav" component={ChoiceNavPage} />
             <Grid fluid>
