@@ -1,5 +1,5 @@
 import React from 'react'
-import { Progress, Col, Row, Divider, Grid } from 'rsuite'
+import { Progress, Col, Row, Divider } from 'rsuite'
 import style from './skills.module.scss'
 import { useAppDispatch } from '../../../reduxFile/hook'
 import { jumpToPage } from '../../../reduxFile/feature/sideHeaderSlice'

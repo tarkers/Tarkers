@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Row, Col, Timeline } from 'rsuite'
+import {  Row, Col, Timeline } from 'rsuite'
 import style from './profile.module.scss'
 import { useAppDispatch } from '../../../reduxFile/hook'
 import { jumpToPage } from '../../../reduxFile/feature/sideHeaderSlice'

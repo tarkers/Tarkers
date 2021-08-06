@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Icon, Timeline } from 'rsuite'
+import {  Timeline } from 'rsuite'
 
 import { useAppDispatch } from '../../../reduxFile/hook'
 import { jumpToPage } from '../../../reduxFile/feature/sideHeaderSlice'

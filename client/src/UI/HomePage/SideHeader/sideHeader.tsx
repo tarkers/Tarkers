@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './sideheader.module.scss'
 import { useAppSelector, useAppDispatch } from '../../../reduxFile/hook'
-import { nextPage, previousPage, jumpToPage } from '../../../reduxFile/feature/sideHeaderSlice'
+import {  jumpToPage } from '../../../reduxFile/feature/sideHeaderSlice'
 const sideHeader: React.FC = () => {
     const dispatch = useAppDispatch()
     const Title = useAppSelector((state: { sideHeader: { title: string } }) => state.sideHeader.title)

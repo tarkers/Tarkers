@@ -5,7 +5,6 @@ interface CssExports {
   'centerDiv': string;
   'pageDivTest': string;
   'pageTitle': string;
-  'redStyle': string;
 }
 export const cssExports: CssExports;
 export default cssExports;

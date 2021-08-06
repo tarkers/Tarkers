@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styles from './header.module.scss'
-import { BrowserRouter, Route, Link } from "react-router-dom";
-import { useWindowDimensions } from '../../Component/useWindowDimensions'
-import { Header, Grid, Row, Col, Navbar, Nav, Icon, Dropdown, IconButton, Button } from 'rsuite'
+import { Link } from "react-router-dom";
+// import { useWindowDimensions } from '../../Component/useWindowDimensions'
+import { Header, Icon, IconButton, } from 'rsuite'
 const header: React.FC = () => {
-    const { height, width } = useWindowDimensions();
+    // const { height, width } = useWindowDimensions();
     return (
         <Header>
             <div className="d-flex bd-highlight">

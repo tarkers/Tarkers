@@ -1,9 +1,8 @@
-import { InputAdornment, TextField } from '@material-ui/core'
+import {  TextField } from '@material-ui/core'
 import React from 'react'
 import { useAppDispatch } from '../../../reduxFile/hook'
 import { jumpToPage } from '../../../reduxFile/feature/sideHeaderSlice'
-import { Button, ButtonToolbar, Col, FlexboxGrid, Icon, IconButton, Row, } from 'rsuite'
-import testman from '../../../../public/image/testman.png'
+import { Button, ButtonToolbar, Col, Icon, IconButton, Row, } from 'rsuite'
 import style from './contact.module.scss'
 const Contact: React.FC = () => {
     const dispatch = useAppDispatch()
